@@ -1,0 +1,38 @@
+{
+  "name": "@fauntleroy/trigger-event",
+  "version": "1.0.0-alpha.1",
+  "description": "Shortcut method for triggering DOM events",
+  "main": "triggerEvent.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "postpublish": "npm run clean",
+    "build": "mkdirp lib && babel src --out-dir lib",
+    "clean": "trash lib",
+    "test": "zuul -- test/**/*.js",
+    "test:browser": "zuul --local 55555 -- test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fauntleroy/trigger-event.git"
+  },
+  "keywords": [
+    "event",
+    "trigger",
+    "dom"
+  ],
+  "author": "Timothy Kempf <tim@kemp59f.info> (http://kemp59f.info)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fauntleroy/trigger-event/issues"
+  },
+  "homepage": "https://github.com/Fauntleroy/trigger-event#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.3.0",
+    "mkdirp": "^0.5.1",
+    "simple-mock": "^0.4.1",
+    "tape": "^4.2.0",
+    "trash": "^2.0.0",
+    "zuul": "^3.6.0"
+  }
+}
