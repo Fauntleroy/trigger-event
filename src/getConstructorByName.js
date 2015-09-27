@@ -29,6 +29,7 @@ var eventsToTypesMap = {
   drop: 'drag'
 };
 
+// access constructors via window just in case they don't exist
 var typesToConstructorsMap = {
   mouse: window['MouseEvent'],
   keyboard: window['KeyboardEvent'],
