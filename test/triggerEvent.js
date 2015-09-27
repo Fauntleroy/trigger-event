@@ -8,7 +8,8 @@ import { eventsToTypesMap } from '../src/getConstructorByName';
 var typesToElementsMap = {
   mouse: document,
   keyboard: document,
-  focus: document
+  focus: document,
+  animation: document
 };
 var typesToPropertiesMap = {
   mouse: {
@@ -19,6 +20,9 @@ var typesToPropertiesMap = {
   },
   focus: {
     relatedTarget: document.createDocumentFragment()
+  },
+  animation: {
+    animationName: 'testanimation'
   }
 };
 

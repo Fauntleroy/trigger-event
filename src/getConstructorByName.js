@@ -13,13 +13,17 @@ var eventsToTypesMap = {
   keypress: 'keyboard',
   keyup: 'keyboard',
   blur: 'focus',
-  focus: 'focus'
+  focus: 'focus',
+  animationend: 'animation',
+  animationiteration: 'animation',
+  animationstart: 'animation'
 };
 
 var typesToConstructorsMap = {
   mouse: MouseEvent,
   keyboard: KeyboardEvent,
-  focus: FocusEvent
+  focus: FocusEvent,
+  animation: AnimationEvent
 };
 
 var getConstructorByName = function (name) {
