@@ -2,5 +2,11 @@ ui: tape
 browsers:
     - name: chrome
       version: latest
+    - name: firefox
+      version: latest
+    - name: opera
+      version: latest
+    - name: ie
+      version: latest
 browserify:
     - transform: babelify
