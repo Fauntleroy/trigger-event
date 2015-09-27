@@ -7,7 +7,8 @@ import { eventsToTypesMap } from '../src/getConstructorByName';
 
 var typesToElementsMap = {
   mouse: document,
-  keyboard: document
+  keyboard: document,
+  focus: document
 };
 var typesToPropertiesMap = {
   mouse: {
@@ -15,6 +16,9 @@ var typesToPropertiesMap = {
   },
   keyboard: {
     key: 'Enter'
+  },
+  focus: {
+    relatedTarget: document.createDocumentFragment()
   }
 };
 

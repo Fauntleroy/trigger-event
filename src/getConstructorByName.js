@@ -11,12 +11,15 @@ var eventsToTypesMap = {
   show: 'mouse',
   keydown: 'keyboard',
   keypress: 'keyboard',
-  keyup: 'keyboard'
+  keyup: 'keyboard',
+  blur: 'focus',
+  focus: 'focus'
 };
 
 var typesToConstructorsMap = {
   mouse: MouseEvent,
-  keyboard: KeyboardEvent
+  keyboard: KeyboardEvent,
+  focus: FocusEvent
 };
 
 var getConstructorByName = function (name) {
