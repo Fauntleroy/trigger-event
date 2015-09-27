@@ -29,7 +29,13 @@ var eventsToTypesMap = {
   drop: 'drag',
   copy: 'clipboard',
   cut: 'clipboard',
-  paste: 'clipboard'
+  paste: 'clipboard',
+  touchcancel: 'touch',
+  touchend: 'touch',
+  touchenter: 'touch',
+  touchleave: 'touch',
+  touchmove: 'touch',
+  touchstart: 'touch'
 };
 
 // access constructors via window just in case they don't exist
@@ -40,8 +46,8 @@ var typesToConstructorsMap = {
   animation: window['AnimationEvent'],
   form: window['Event'],
   drag: window['DragEvent'],
-  // will use `ClipboardEvent` once any browser supports instantiating it properly
-  clipboard: window['Event']
+  clipboard: window['ClipboardEvent'],
+  touch: window['TouchEvent']
 };
 
 var getConstructorByName = function (name) {
