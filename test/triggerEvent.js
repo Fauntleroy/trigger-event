@@ -11,7 +11,8 @@ var typesToElementsMap = {
   focus: document,
   animation: document,
   form: document.createElement('form'),
-  drag: document
+  drag: document,
+  clipboard: document
 };
 var typesToPropertiesMap = {
   mouse: {
@@ -31,7 +32,9 @@ var typesToPropertiesMap = {
   },
   drag: {
     clientX: 50
-  }
+  },
+  // This event doesn't work properly in any browser yet, so data passing isn't going to work
+  clipboard: {}
 };
 
 _.forEach(eventsToTypesMap, function (eventType, eventName) {
