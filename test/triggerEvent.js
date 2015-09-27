@@ -10,6 +10,7 @@ var typesToElementsMap = {
   keyboard: document,
   focus: document,
   animation: document,
+  transition: document,
   form: document.createElement('form'),
   drag: document,
   clipboard: document,
@@ -27,6 +28,9 @@ var typesToPropertiesMap = {
   },
   animation: {
     animationName: 'testanimation'
+  },
+  transition: {
+    elapsedTime: 50
   },
   form: {
     bubbles: true
