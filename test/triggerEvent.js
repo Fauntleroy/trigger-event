@@ -9,7 +9,9 @@ var typesToElementsMap = {
   mouse: document,
   keyboard: document,
   focus: document,
-  animation: document
+  animation: document,
+  form: document.createElement('form'),
+  drag: document
 };
 var typesToPropertiesMap = {
   mouse: {
@@ -23,6 +25,12 @@ var typesToPropertiesMap = {
   },
   animation: {
     animationName: 'testanimation'
+  },
+  form: {
+    bubbles: true
+  },
+  drag: {
+    clientX: 50
   }
 };
 

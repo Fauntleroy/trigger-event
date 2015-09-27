@@ -16,14 +16,26 @@ var eventsToTypesMap = {
   focus: 'focus',
   animationend: 'animation',
   animationiteration: 'animation',
-  animationstart: 'animation'
+  animationstart: 'animation',
+  change: 'form',
+  reset: 'form',
+  submit: 'form',
+  drag: 'drag',
+  dragend: 'drag',
+  dragenter: 'drag',
+  dragleave: 'drag',
+  dragover: 'drag',
+  dragstart: 'drag',
+  drop: 'drag'
 };
 
 var typesToConstructorsMap = {
-  mouse: MouseEvent,
-  keyboard: KeyboardEvent,
-  focus: FocusEvent,
-  animation: AnimationEvent
+  mouse: window['MouseEvent'],
+  keyboard: window['KeyboardEvent'],
+  focus: window['FocusEvent'],
+  animation: window['AnimationEvent'],
+  form: window['Event'],
+  drag: window['DragEvent']
 };
 
 var getConstructorByName = function (name) {
