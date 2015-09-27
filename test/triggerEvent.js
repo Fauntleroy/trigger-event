@@ -6,11 +6,15 @@ import triggerEvent from '../src/triggerEvent';
 import { eventsToTypesMap } from '../src/getConstructorByName';
 
 var typesToElementsMap = {
-  mouse: document
+  mouse: document,
+  keyboard: document
 };
 var typesToPropertiesMap = {
   mouse: {
     clientX: 50
+  },
+  keyboard: {
+    key: 'Enter'
   }
 };
 
