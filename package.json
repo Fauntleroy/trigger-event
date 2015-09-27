@@ -2,7 +2,7 @@
   "name": "@fauntleroy/trigger-event",
   "version": "1.0.0-alpha.1",
   "description": "Shortcut method for triggering DOM events",
-  "main": "triggerEvent.js",
+  "main": "lib/triggerEvent.js",
   "scripts": {
     "prepublish": "npm run build",
     "postpublish": "npm run clean",
@@ -29,6 +29,7 @@
   "devDependencies": {
     "babel": "^5.8.23",
     "babelify": "^6.3.0",
+    "lodash": "^3.10.1",
     "mkdirp": "^0.5.1",
     "simple-mock": "^0.4.1",
     "tape": "^4.2.0",
