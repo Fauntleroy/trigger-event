@@ -8,6 +8,7 @@ var eventsToTypesMap = {
   mousemove: 'mouse',
   mouseout: 'mouse',
   mouseover: 'mouse',
+  mouseup: 'mouse',
   show: 'mouse',
   keydown: 'keyboard',
   keypress: 'keyboard',
