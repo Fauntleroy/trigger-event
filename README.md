@@ -23,7 +23,7 @@ Argument | Type | Description
 ----- | ----- | -----
 **element** | *Element* | The element you want to trigger the event on.
 **event** | *String* | The event that you want to trigger.
-**properties** | *Object* | The properties you want the event to have. This will not work with some events, see [Compatibility](#Compatibility).
+**properties** | *Object* | The properties you want the event to have. This will not work with some events, see [Compatibility](#compatibility).
 
 ```js
 var triggerEvent = require('@fauntleroy/trigger-event');
