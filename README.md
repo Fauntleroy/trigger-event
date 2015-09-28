@@ -41,4 +41,4 @@ triggerEvent(document, 'click', {
 
 ### Compatibility
 
-Some events, such as `TouchEvent`s, `DragEvent`s, and `KeyEvent`s aren't quite properly handled by many browsers (like Chrome). While it's possible to trigger these events, they often have trouble with the `properties` object. Until these browsers catch up, some events just can't be triggered with custom `properties`.
+Some events, such as `TouchEvent`, `DragEvent`, and `KeyEvent` aren't quite properly handled by many browsers (like Chrome). While it's possible to trigger these events, they often have trouble with the `properties` object. Until these browsers catch up, some events just can't be triggered with custom `properties`.
