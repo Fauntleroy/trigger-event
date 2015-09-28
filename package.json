@@ -1,6 +1,6 @@
 {
   "name": "@fauntleroy/trigger-event",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Shortcut method for triggering DOM events",
   "main": "lib/triggerEvent.js",
   "scripts": {
